@@ -212,13 +212,13 @@
       <UniqueIdentifier>4BBCC106-9A1A-08E7-B442-21FCDE16E0B4</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\gui\screen1_screen">
-      <UniqueIdentifier>4A7BEAF8-C736-3628-71A9-8AFEDDBAE66E</UniqueIdentifier>
+      <UniqueIdentifier>7EE391BB-91FE-CE00-7CB3-7EBB63E80976</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>BB1BF048-4D4F-34FB-AC47-B7206851EC91</UniqueIdentifier>
+      <UniqueIdentifier>D2343F97-A7F7-2DF6-8389-59936F4A87FB</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\generated\gui_generated\screen1_screen">
-      <UniqueIdentifier>10461B61-ABB2-2AA7-D4AB-11589AA20772</UniqueIdentifier>
+      <UniqueIdentifier>560AF357-3CA7-1FC4-8808-2EF27606C5BF</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
