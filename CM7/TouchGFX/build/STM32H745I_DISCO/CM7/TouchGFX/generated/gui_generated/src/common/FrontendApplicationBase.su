@@ -45,21 +45,24 @@ Transition.hpp:88:18:virtual void touchgfx::Transition::invalidate()	8	static
 MVPApplication.hpp:59:18:virtual void touchgfx::MVPApplication::handlePendingScreenTransition()	8	static
 HAL.hpp:246:17:static touchgfx::LCD& touchgfx::HAL::lcd()	0	static
 CoverTransition.hpp:83:18:void touchgfx::CoverTransition<templateDirection>::handleTickEvent() [with touchgfx::Direction templateDirection = (touchgfx::Direction)2]	48	static
-FrontendApplicationBase.cpp:23:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
-FrontendApplicationBase.cpp:40:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	0	static
-FrontendApplicationBase.cpp:51:6:void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEast()	0	static
-FrontendApplicationBase.cpp:64:6:void FrontendApplicationBase::gotoBulbTimeScreenCoverTransitionEast()	0	static
-FrontendApplicationBase.cpp:77:6:void FrontendApplicationBase::gotoIntervalScreenCoverTransitionEast()	0	static
-FrontendApplicationBase.cpp:90:6:void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEast()	0	static
+FrontendApplicationBase.cpp:25:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
+FrontendApplicationBase.cpp:42:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	0	static
+FrontendApplicationBase.cpp:53:6:void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEast()	0	static
+FrontendApplicationBase.cpp:66:6:void FrontendApplicationBase::gotoBulbTimeScreenCoverTransitionEast()	0	static
+FrontendApplicationBase.cpp:79:6:void FrontendApplicationBase::gotoIntervalScreenCoverTransitionEast()	0	static
+FrontendApplicationBase.cpp:92:6:void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEast()	0	static
+FrontendApplicationBase.cpp:105:6:void FrontendApplicationBase::gotoWorkScreenCoverTransitionEast()	0	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = Screen1View; PresenterType = Screen1Presenter; TransType = touchgfx::NoTransition; ModelType = Model]	32	static
-FrontendApplicationBase.cpp:46:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	16	static
+FrontendApplicationBase.cpp:48:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	16	static
 AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::CoverTransition<(touchgfx::Direction)2>]	0	static
 CoverTransition.hpp:45:5:touchgfx::CoverTransition<templateDirection>::CoverTransition(uint8_t) [with touchgfx::Direction templateDirection = (touchgfx::Direction)2]	24	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = Screen1View; PresenterType = Screen1Presenter; TransType = touchgfx::CoverTransition<(touchgfx::Direction)2>; ModelType = Model]	32	static
-FrontendApplicationBase.cpp:57:6:void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEastImpl()	16	static
+FrontendApplicationBase.cpp:59:6:void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEastImpl()	16	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = BulbTimeView; PresenterType = BulbTimePresenter; TransType = touchgfx::CoverTransition<(touchgfx::Direction)2>; ModelType = Model]	32	static
-FrontendApplicationBase.cpp:70:6:void FrontendApplicationBase::gotoBulbTimeScreenCoverTransitionEastImpl()	16	static
+FrontendApplicationBase.cpp:72:6:void FrontendApplicationBase::gotoBulbTimeScreenCoverTransitionEastImpl()	16	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = IntervalView; PresenterType = IntervalPresenter; TransType = touchgfx::CoverTransition<(touchgfx::Direction)2>; ModelType = Model]	32	static
-FrontendApplicationBase.cpp:83:6:void FrontendApplicationBase::gotoIntervalScreenCoverTransitionEastImpl()	16	static
+FrontendApplicationBase.cpp:85:6:void FrontendApplicationBase::gotoIntervalScreenCoverTransitionEastImpl()	16	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = SettingsView; PresenterType = SettingsPresenter; TransType = touchgfx::CoverTransition<(touchgfx::Direction)2>; ModelType = Model]	32	static
-FrontendApplicationBase.cpp:96:6:void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEastImpl()	16	static
+FrontendApplicationBase.cpp:98:6:void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEastImpl()	16	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = WorkView; PresenterType = WorkPresenter; TransType = touchgfx::CoverTransition<(touchgfx::Direction)2>; ModelType = Model]	32	static
+FrontendApplicationBase.cpp:111:6:void FrontendApplicationBase::gotoWorkScreenCoverTransitionEastImpl()	16	static

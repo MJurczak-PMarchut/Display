@@ -1,10 +1,12 @@
 Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-SettingsViewBase.hpp:27:18:virtual void SettingsViewBase::ConfirmSettingsChange()	0	static
 SettingsViewBase.hpp:32:18:virtual void SettingsViewBase::CancelSettingsChange()	0	static
 SettingsView.hpp:11:13:SettingsView::~SettingsView()	0	static
-SettingsView.cpp:13:6:virtual void SettingsView::tearDownScreen()	0	static
-SettingsView.cpp:8:6:virtual void SettingsView::setupScreen()	0	static
+SettingsView.cpp:16:6:virtual void SettingsView::tearDownScreen()	0	static
+SettingsView.cpp:26:6:virtual void SettingsView::ConfirmSettingsChange()	4	static
+SettingsView.cpp:8:6:virtual void SettingsView::setupScreen()	8	static
 SettingsView.hpp:11:13:virtual SettingsView::~SettingsView()	8	static
+Bitmap.hpp:133:14:touchgfx::BitmapId touchgfx::Bitmap::getId() const	8	static
+SettingsView.cpp:21:6:virtual void SettingsView::ToggleBULBClicked()	16	static
 SettingsView.cpp:3:1:SettingsView::SettingsView()	8	static

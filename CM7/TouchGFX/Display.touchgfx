@@ -84,7 +84,7 @@
           },
           {
             "Type": "ButtonWithLabel",
-            "Name": "buttonWithLabel1",
+            "Name": "StartButton",
             "X": 382,
             "Y": 58,
             "Width": 60,
@@ -107,8 +107,8 @@
           },
           {
             "Type": "TextArea",
-            "Name": "textArea2",
-            "X": 240,
+            "Name": "BulbTime_text",
+            "X": 217,
             "Y": 59,
             "Width": 47,
             "Height": 25,
@@ -123,13 +123,13 @@
             "Wildcard1": {
               "TextId": "__SingleUse_VP6J",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 20
             }
           },
           {
             "Type": "TextArea",
-            "Name": "textArea2_1",
-            "X": 240,
+            "Name": "Interval_text",
+            "X": 217,
             "Y": 119,
             "Width": 47,
             "Height": 25,
@@ -144,13 +144,13 @@
             "Wildcard1": {
               "TextId": "__SingleUse_O2WU",
               "UseBuffer": true,
-              "BufferSize": 10
+              "BufferSize": 15
             }
           },
           {
             "Type": "TextArea",
             "Name": "repetitions_tb",
-            "X": 240,
+            "X": 217,
             "Y": 179,
             "Width": 112,
             "Height": 25,
@@ -223,6 +223,19 @@
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
               "ActionComponent": "Settings"
+            }
+          },
+          {
+            "InteractionName": "Start",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "StartButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Work"
             }
           }
         ]
@@ -928,7 +941,7 @@
           },
           {
             "Type": "ToggleButton",
-            "Name": "toggleButton1",
+            "Name": "toggleFocus",
             "X": 39,
             "Y": 113,
             "Width": 96,
@@ -1048,10 +1061,166 @@
             }
           },
           {
-            "InteractionName": "Interaction1",
+            "InteractionName": "ReturnToMainScreen2",
             "Trigger": {
               "Type": "TriggerInteractionCompleted",
               "InteractionToTriggerOn": "CancelSettings"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "ToggleBULB",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "BulbToggle"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "ToggleBULBClicked"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Work",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -17,
+            "Y": -16,
+            "Width": 515,
+            "Height": 304,
+            "RelativeFilename": "abstract-hud-ui-gui-future-futuristic-screen-system-virtual-background_115579-779.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 94,
+            "Y": 78,
+            "Width": 348,
+            "Height": 25,
+            "TextId": "Idle_state",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 31,
+            "Y": 78,
+            "Width": 55,
+            "Height": 25,
+            "TextId": "__SingleUse_MT83",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea3",
+            "X": 190,
+            "Y": 29,
+            "Width": 100,
+            "Height": 49,
+            "TextId": "__SingleUse_X5KL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Start",
+            "X": 48,
+            "Y": 170,
+            "Width": 170,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "TextId": "__SingleUse_ZLQU",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Cancel",
+            "X": 278,
+            "Y": 170,
+            "Width": 170,
+            "Height": 60,
+            "Pressed": "__designer\\Blue_Buttons_Round_Edge_small_pressed.png",
+            "Released": "__designer\\Blue_Buttons_Round_Edge_small.png",
+            "TextId": "__SingleUse_O8NN",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Style": "Style4"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Start",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Start"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "StartWorking"
+            }
+          },
+          {
+            "InteractionName": "Cancel",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Cancel"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "CancelWork"
+            }
+          },
+          {
+            "InteractionName": "ReturnToMain",
+            "Trigger": {
+              "Type": "TriggerInteractionCompleted",
+              "InteractionToTriggerOn": "Cancel"
             },
             "Action": {
               "Type": "ActionGotoScreen",

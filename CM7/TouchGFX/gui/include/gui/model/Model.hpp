@@ -20,6 +20,9 @@ public:
 
     void GetTimeInterval(uint8_t *saveHour, uint8_t *saveMinute, uint8_t *saveSecond);
 
+    void GetToggleSettings(bool *BULB_State, bool *Focus_state);
+    void SaveToggleSettings(bool BULB_State, bool Focus_state);
+
     void tick();
 protected:
     ModelListener* modelListener;
@@ -30,6 +33,8 @@ private:
     uint8_t sav_Hour_interval = 0;
     uint8_t sav_Minute_interval = 0;
     uint8_t sav_Second_interval = 0;
+    bool sav_Focus_state = false;
+    bool sav_BULB_state = false;
 };
 
 #endif // MODEL_HPP

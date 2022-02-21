@@ -33,19 +33,19 @@ protected:
     touchgfx::ButtonWithLabel Interwal;
     touchgfx::ButtonWithLabel Czas;
     touchgfx::ButtonWithLabel repetitions;
-    touchgfx::ButtonWithLabel buttonWithLabel1;
-    touchgfx::TextAreaWithOneWildcard textArea2;
-    touchgfx::TextAreaWithOneWildcard textArea2_1;
+    touchgfx::ButtonWithLabel StartButton;
+    touchgfx::TextAreaWithOneWildcard BulbTime_text;
+    touchgfx::TextAreaWithOneWildcard Interval_text;
     touchgfx::TextAreaWithOneWildcard repetitions_tb;
     touchgfx::ButtonWithIcon SettingsButton;
 
     /*
      * Wildcard Buffers
      */
-    static const uint16_t TEXTAREA2_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2Buffer[TEXTAREA2_SIZE];
-    static const uint16_t TEXTAREA2_1_SIZE = 10;
-    touchgfx::Unicode::UnicodeChar textArea2_1Buffer[TEXTAREA2_1_SIZE];
+    static const uint16_t BULBTIME_TEXT_SIZE = 20;
+    touchgfx::Unicode::UnicodeChar BulbTime_textBuffer[BULBTIME_TEXT_SIZE];
+    static const uint16_t INTERVAL_TEXT_SIZE = 15;
+    touchgfx::Unicode::UnicodeChar Interval_textBuffer[INTERVAL_TEXT_SIZE];
     static const uint16_t REPETITIONS_TB_SIZE = 15;
     touchgfx::Unicode::UnicodeChar repetitions_tbBuffer[REPETITIONS_TB_SIZE];
 

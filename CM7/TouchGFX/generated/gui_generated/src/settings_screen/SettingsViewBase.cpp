@@ -23,14 +23,15 @@ SettingsViewBase::SettingsViewBase() :
 
     BulbToggle.setXY(39, 73);
     BulbToggle.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_SMALL_BUTTON_ON_ID));
+    BulbToggle.setAction(buttonCallback);
 
     textArea2.setXY(135, 80);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     textArea2.setLinespacing(0);
     textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_O46V));
 
-    toggleButton1.setXY(39, 113);
-    toggleButton1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_SMALL_BUTTON_ON_ID));
+    toggleFocus.setXY(39, 113);
+    toggleFocus.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_SMALL_BUTTON_OFF_ID), touchgfx::Bitmap(BITMAP_BLUE_TOGGLEBARS_TOGGLE_ROUND_SMALL_BUTTON_ON_ID));
 
     textArea1_1.setXY(135, 120);
     textArea1_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -58,7 +59,7 @@ SettingsViewBase::SettingsViewBase() :
     add(textArea1);
     add(BulbToggle);
     add(textArea2);
-    add(toggleButton1);
+    add(toggleFocus);
     add(textArea1_1);
     add(ConfirmSettings);
     add(CancelSettings);
@@ -72,7 +73,14 @@ void SettingsViewBase::setupScreen()
 
 void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &ConfirmSettings)
+    if (&src == &BulbToggle)
+    {
+        //ToggleBULB
+        //When BulbToggle clicked call virtual function
+        //Call ToggleBULBClicked
+        ToggleBULBClicked();
+    }
+    else if (&src == &ConfirmSettings)
     {
         //ConfirmSettings
         //When ConfirmSettings clicked call virtual function
@@ -91,7 +99,7 @@ void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
         //Call CancelSettingsChange
         CancelSettingsChange();
 
-        //Interaction1
+        //ReturnToMainScreen2
         //When CancelSettings completed change screen to Screen1
         //Go to Screen1 with screen transition towards East
         application().gotoScreen1ScreenCoverTransitionEast();

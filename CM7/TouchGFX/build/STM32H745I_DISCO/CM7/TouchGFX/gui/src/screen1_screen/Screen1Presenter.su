@@ -1,5 +1,8 @@
-Screen1Presenter.hpp:28:13:Screen1Presenter::~Screen1Presenter()	0	static
+Screen1Presenter.hpp:31:13:Screen1Presenter::~Screen1Presenter()	0	static
 Screen1Presenter.cpp:10:6:virtual void Screen1Presenter::activate()	0	static
-Screen1Presenter.hpp:28:13:virtual Screen1Presenter::~Screen1Presenter()	8	static
-Screen1Presenter.hpp:28:13:virtual void* Screen1Presenter::_ZThn4_N16Screen1PresenterD1Ev()	0	static
+Screen1Presenter.hpp:31:13:virtual Screen1Presenter::~Screen1Presenter()	8	static
+Screen1Presenter.cpp:20:6:virtual void Screen1Presenter::GetTimeBulb(uint8_t*, uint8_t*, uint8_t*)	0	static
+Screen1Presenter.cpp:25:6:virtual void Screen1Presenter::GetTimeInterval(uint8_t*, uint8_t*, uint8_t*)	0	static
+Screen1Presenter.cpp:30:6:virtual bool Screen1Presenter::GetBULBInfo()	16	static
+Screen1Presenter.hpp:31:13:virtual void* Screen1Presenter::_ZThn4_N16Screen1PresenterD1Ev()	0	static
 Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	8	static

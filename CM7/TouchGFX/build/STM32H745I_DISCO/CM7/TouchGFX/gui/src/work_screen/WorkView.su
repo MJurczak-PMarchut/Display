@@ -1,0 +1,12 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+TypedText.hpp:65:13:touchgfx::TypedText::~TypedText()	0	static
+WorkView.hpp:11:13:WorkView::~WorkView()	0	static
+WorkView.cpp:14:6:virtual void WorkView::tearDownScreen()	0	static
+WorkView.cpp:9:6:virtual void WorkView::setupScreen()	0	static
+WorkView.cpp:25:6:virtual void WorkView::CancelWork()	16	static
+WorkView.cpp:19:6:virtual void WorkView::StartWorking()	16	static
+TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
+WorkView.hpp:11:13:virtual WorkView::~WorkView()	8	static
+WorkView.cpp:4:1:WorkView::WorkView()	8	static

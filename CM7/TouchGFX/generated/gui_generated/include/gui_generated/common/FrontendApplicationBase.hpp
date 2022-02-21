@@ -29,6 +29,9 @@ public:
     // Settings
     void gotoSettingsScreenCoverTransitionEast();
 
+    // Work
+    void gotoWorkScreenCoverTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -47,6 +50,9 @@ protected:
 
     // Settings
     void gotoSettingsScreenCoverTransitionEastImpl();
+
+    // Work
+    void gotoWorkScreenCoverTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

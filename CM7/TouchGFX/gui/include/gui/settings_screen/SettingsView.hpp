@@ -11,7 +11,11 @@ public:
     virtual ~SettingsView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void ToggleBULBClicked();
+    virtual void ConfirmSettingsChange();
 protected:
+    bool toggleBULB_state = false;
+    bool toggleFocus_state = false;
 };
 
 #endif // SETTINGSVIEW_HPP

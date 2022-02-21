@@ -25,6 +25,9 @@ public:
      */
     virtual void deactivate();
 
+    virtual void SaveTogleState(bool BULB_State, bool Focus_state);
+    virtual void GetTogleState(bool *BULB_State, bool *Focus_state);
+
     virtual ~SettingsPresenter() {};
 
 private:

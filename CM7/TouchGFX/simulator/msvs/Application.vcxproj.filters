@@ -220,6 +220,18 @@
     <Filter Include="Source Files\generated\gui_generated\screen1_screen">
       <UniqueIdentifier>560AF357-3CA7-1FC4-8808-2EF27606C5BF</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\work_screen">
+      <UniqueIdentifier>ECBA89F7-68F5-C5A5-1C3D-F701ACBF5002</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\work_screen">
+      <UniqueIdentifier>A19B9B0A-43D5-C4DA-F22B-821E12E402CE</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\work_screen">
+      <UniqueIdentifier>2ECA34A4-861F-436A-0DE4-0E2AFD7873D8</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\work_screen">
+      <UniqueIdentifier>17FC8E9F-BB05-00D8-814B-0E8F8E29EED6</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -287,6 +299,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\screen1_screen\Screen1ViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\screen1_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\work_screen\WorkPresenter.cpp">
+      <Filter>Source Files\gui\work_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\work_screen\WorkView.cpp">
+      <Filter>Source Files\gui\work_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\work_screen\WorkViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\work_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -765,6 +786,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\screen1_screen\Screen1ViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\screen1_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\work_screen\WorkPresenter.hpp">
+      <Filter>Header Files\gui\work_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\work_screen\WorkView.hpp">
+      <Filter>Header Files\gui\work_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\work_screen\WorkViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\work_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

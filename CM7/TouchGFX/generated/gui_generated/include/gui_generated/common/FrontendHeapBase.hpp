@@ -22,6 +22,8 @@
 #include <gui/interval_screen/IntervalPresenter.hpp>
 #include <gui/settings_screen/SettingsView.hpp>
 #include <gui/settings_screen/SettingsPresenter.hpp>
+#include <gui/work_screen/WorkView.hpp>
+#include <gui/work_screen/WorkPresenter.hpp>
 
 
 /**
@@ -48,7 +50,8 @@ public:
             touchgfx::meta::TypeList< BulbTimeView,
             touchgfx::meta::TypeList< IntervalView,
             touchgfx::meta::TypeList< SettingsView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< WorkView,
+            touchgfx::meta::Nil > > > >
             > GeneratedViewTypes;
 
     /**
@@ -64,7 +67,8 @@ public:
             touchgfx::meta::TypeList< BulbTimePresenter,
             touchgfx::meta::TypeList< IntervalPresenter,
             touchgfx::meta::TypeList< SettingsPresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< WorkPresenter,
+            touchgfx::meta::Nil > > > >
             > GeneratedPresenterTypes;
 
     /**

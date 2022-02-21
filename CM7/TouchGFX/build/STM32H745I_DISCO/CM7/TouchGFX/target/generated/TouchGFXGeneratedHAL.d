@@ -74,6 +74,9 @@ CM7/TouchGFX/build/STM32H745I_DISCO/CM7/TouchGFX/target/generated/TouchGFXGenera
  CM7/TouchGFX/generated/gui_generated/include/gui_generated/settings_screen/SettingsViewBase.hpp \
  CM7/TouchGFX/gui/include/gui/settings_screen/SettingsPresenter.hpp \
  CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp \
+ CM7/TouchGFX/gui/include/gui/work_screen/WorkView.hpp \
+ CM7/TouchGFX/generated/gui_generated/include/gui_generated/work_screen/WorkViewBase.hpp \
+ CM7/TouchGFX/gui/include/gui/work_screen/WorkPresenter.hpp \
  CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h7xx.h \
  Drivers/CMSIS/Device/ST/STM32H7xx/Include/stm32h745xx.h \
@@ -259,6 +262,12 @@ CM7/TouchGFX/generated/gui_generated/include/gui_generated/settings_screen/Setti
 CM7/TouchGFX/gui/include/gui/settings_screen/SettingsPresenter.hpp:
 
 CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ToggleButton.hpp:
+
+CM7/TouchGFX/gui/include/gui/work_screen/WorkView.hpp:
+
+CM7/TouchGFX/generated/gui_generated/include/gui_generated/work_screen/WorkViewBase.hpp:
+
+CM7/TouchGFX/gui/include/gui/work_screen/WorkPresenter.hpp:
 
 CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
 

@@ -1,0 +1,5 @@
+WorkPresenter.hpp:28:13:WorkPresenter::~WorkPresenter()	0	static
+WorkPresenter.cpp:10:6:virtual void WorkPresenter::activate()	0	static
+WorkPresenter.hpp:28:13:virtual WorkPresenter::~WorkPresenter()	8	static
+WorkPresenter.hpp:28:13:virtual void* WorkPresenter::_ZThn4_N13WorkPresenterD1Ev()	0	static
+WorkPresenter.cpp:4:1:WorkPresenter::WorkPresenter(WorkView&)	8	static

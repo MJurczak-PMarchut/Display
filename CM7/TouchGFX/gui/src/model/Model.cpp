@@ -38,3 +38,15 @@ void Model::GetTimeInterval(uint8_t *saveHour, uint8_t *saveMinute, uint8_t *sav
 	*saveMinute = sav_Minute_interval;
 	*saveSecond = sav_Second_interval;
 }
+
+void Model::SaveToggleSettings(bool BULB_State, bool Focus_state)
+{
+	sav_BULB_state = BULB_State;
+	sav_Focus_state = Focus_state;
+}
+
+void Model::GetToggleSettings(bool *BULB_State, bool *Focus_state)
+{
+	*BULB_State = sav_BULB_state;
+	*Focus_state = sav_Focus_state;
+}

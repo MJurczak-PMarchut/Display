@@ -36,29 +36,30 @@ Screen1ViewBase::Screen1ViewBase() :
     repetitions.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     repetitions.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
 
-    buttonWithLabel1.setXY(382, 58);
-    buttonWithLabel1.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
-    buttonWithLabel1.setLabelText(touchgfx::TypedText(T___SINGLEUSE_SWCD));
-    buttonWithLabel1.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    buttonWithLabel1.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    StartButton.setXY(382, 58);
+    StartButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
+    StartButton.setLabelText(touchgfx::TypedText(T___SINGLEUSE_SWCD));
+    StartButton.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    StartButton.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    StartButton.setAction(buttonCallback);
 
-    textArea2.setXY(240, 59);
-    textArea2.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textArea2.setLinespacing(0);
-    Unicode::snprintf(textArea2Buffer, TEXTAREA2_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_VP6J).getText());
-    textArea2.setWildcard(textArea2Buffer);
-    textArea2.resizeToCurrentText();
-    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C5E2));
+    BulbTime_text.setXY(217, 59);
+    BulbTime_text.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    BulbTime_text.setLinespacing(0);
+    Unicode::snprintf(BulbTime_textBuffer, BULBTIME_TEXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_VP6J).getText());
+    BulbTime_text.setWildcard(BulbTime_textBuffer);
+    BulbTime_text.resizeToCurrentText();
+    BulbTime_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_C5E2));
 
-    textArea2_1.setXY(240, 119);
-    textArea2_1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
-    textArea2_1.setLinespacing(0);
-    Unicode::snprintf(textArea2_1Buffer, TEXTAREA2_1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_O2WU).getText());
-    textArea2_1.setWildcard(textArea2_1Buffer);
-    textArea2_1.resizeToCurrentText();
-    textArea2_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FKR2));
+    Interval_text.setXY(217, 119);
+    Interval_text.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    Interval_text.setLinespacing(0);
+    Unicode::snprintf(Interval_textBuffer, INTERVAL_TEXT_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_O2WU).getText());
+    Interval_text.setWildcard(Interval_textBuffer);
+    Interval_text.resizeToCurrentText();
+    Interval_text.setTypedText(touchgfx::TypedText(T___SINGLEUSE_FKR2));
 
-    repetitions_tb.setXY(240, 179);
+    repetitions_tb.setXY(217, 179);
     repetitions_tb.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     repetitions_tb.setLinespacing(0);
     Unicode::snprintf(repetitions_tbBuffer, REPETITIONS_TB_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_CUY9).getText());
@@ -76,9 +77,9 @@ Screen1ViewBase::Screen1ViewBase() :
     add(Interwal);
     add(Czas);
     add(repetitions);
-    add(buttonWithLabel1);
-    add(textArea2);
-    add(textArea2_1);
+    add(StartButton);
+    add(BulbTime_text);
+    add(Interval_text);
     add(repetitions_tb);
     add(SettingsButton);
 }
@@ -103,6 +104,13 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When Czas clicked change screen to BulbTime
         //Go to BulbTime with screen transition towards East
         application().gotoBulbTimeScreenCoverTransitionEast();
+    }
+    else if (&src == &StartButton)
+    {
+        //Start
+        //When StartButton clicked change screen to Work
+        //Go to Work with screen transition towards East
+        application().gotoWorkScreenCoverTransitionEast();
     }
     else if (&src == &SettingsButton)
     {

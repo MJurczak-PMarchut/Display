@@ -21,7 +21,8 @@ View.hpp:36:7:touchgfx::View<SettingsPresenter>::~View()	0	static
 SettingsViewBase.hpp:21:13:SettingsViewBase::~SettingsViewBase()	0	static
 SettingsViewBase.hpp:27:18:virtual void SettingsViewBase::ConfirmSettingsChange()	0	static
 SettingsViewBase.hpp:32:18:virtual void SettingsViewBase::CancelSettingsChange()	0	static
-SettingsViewBase.cpp:68:6:virtual void SettingsViewBase::setupScreen()	0	static
+SettingsViewBase.hpp:37:18:virtual void SettingsViewBase::ToggleBULBClicked()	0	static
+SettingsViewBase.cpp:69:6:virtual void SettingsViewBase::setupScreen()	0	static
 Callback.hpp:357:8:touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButton&>::~Callback()	0	static
 Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = SettingsViewBase; T1 = const touchgfx::AbstractButton&]	8	static
 Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = SettingsViewBase; T1 = const touchgfx::AbstractButton&]	0	static
@@ -29,10 +30,10 @@ TypedText.hpp:65:13:virtual touchgfx::TypedText::~TypedText()	8	static
 View.hpp:36:7:virtual touchgfx::View<SettingsPresenter>::~View()	8	static
 Callback.hpp:357:8:virtual touchgfx::Callback<SettingsViewBase, const touchgfx::AbstractButton&>::~Callback()	8	static
 SettingsViewBase.hpp:21:13:virtual SettingsViewBase::~SettingsViewBase()	8	static
-SettingsViewBase.cpp:73:6:void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
+SettingsViewBase.cpp:74:6:void SettingsViewBase::buttonCallbackHandler(const touchgfx::AbstractButton&)	8	static
 Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	0	static
 Drawable.hpp:326:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 TextArea.hpp:42:5:touchgfx::TextArea::TextArea()	8	static
 ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
 ToggleButton.hpp:32:7:touchgfx::ToggleButton::ToggleButton()	8	static
-SettingsViewBase.cpp:9:1:SettingsViewBase::SettingsViewBase()	104	static
+SettingsViewBase.cpp:9:1:SettingsViewBase::SettingsViewBase()	112	static

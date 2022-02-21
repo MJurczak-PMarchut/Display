@@ -392,6 +392,16 @@
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/gui/src/settings_screen/SettingsView.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/WorkPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/gui/src/work_screen/WorkPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/WorkView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/gui/src/work_screen/WorkView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/ApplicationFontProvider.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/generated/fonts/src/ApplicationFontProvider.cpp</locationURI>
@@ -500,6 +510,11 @@
 			<name>Application/User/generated/SettingsViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/generated/gui_generated/src/settings_screen/SettingsViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/WorkViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/CM7/TouchGFX/generated/gui_generated/src/work_screen/WorkViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/BitmapDatabase.cpp</name>

@@ -4,8 +4,8 @@
     <Text Id="__SingleUse_8M8R" TypographyId="Default" Alignment="Center" Direction="LTR">
       <Translation Language="GB">Interwał</Translation>
     </Text>
-    <Text Id="ResourceId1" TypographyId="Default" Alignment="Left" Direction="LTR">
-      <Translation Language="GB">!</Translation>
+    <Text Id="GetFocus_state" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Ustawianie ostrości</Translation>
     </Text>
     <Text Id="__SingleUse_BHKN" TypographyId="Default" Alignment="Center" Direction="LTR">
       <Translation Language="GB">Czas</Translation>
@@ -58,9 +58,30 @@
     <Text Id="__SingleUse_FPCC" TypographyId="Default" Alignment="Center" Direction="LTR">
       <Translation Language="GB">Język</Translation>
     </Text>
+    <Text Id="ShutterRelease_state" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Wykonywanie zdjęcia</Translation>
+    </Text>
+    <Text Id="WaitingForInterval_state" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Interwał</Translation>
+    </Text>
+    <Text Id="__SingleUse_MT83" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Stan:</Translation>
+    </Text>
+    <Text Id="Idle_state" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Oczekiwanie</Translation>
+    </Text>
+    <Text Id="__SingleUse_X5KL" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Start</Translation>
+    </Text>
+    <Text Id="__SingleUse_ZLQU" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Rozpocznij</Translation>
+    </Text>
+    <Text Id="__SingleUse_O8NN" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Anuluj</Translation>
+    </Text>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="?" WildcardCharacters="0-9,!" WildcardCharacterRanges="0-9,!-)" />
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="?" WildcardCharacters="0-9,a-z,A-Z" WildcardCharacterRanges="0-9,a-z,A-Z" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" FallbackCharacter="?" />
     <Typography Id="Polish" Font="arial.ttf" Size="10" Bpp="4" FallbackCharacter="?" />

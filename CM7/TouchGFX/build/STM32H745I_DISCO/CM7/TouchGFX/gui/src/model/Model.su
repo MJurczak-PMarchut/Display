@@ -4,3 +4,5 @@ Model.cpp:14:6:void Model::SaveTimeBulb(uint8_t, uint8_t, uint8_t)	0	static
 Model.cpp:21:6:void Model::GetTimeBulb(uint8_t*, uint8_t*, uint8_t*)	8	static
 Model.cpp:28:6:void Model::SaveTimeInterval(uint8_t, uint8_t, uint8_t)	0	static
 Model.cpp:35:6:void Model::GetTimeInterval(uint8_t*, uint8_t*, uint8_t*)	8	static
+Model.cpp:42:6:void Model::SaveToggleSettings(bool, bool)	0	static
+Model.cpp:48:6:void Model::GetToggleSettings(bool*, bool*)	0	static

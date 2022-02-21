@@ -34,6 +34,11 @@ public:
         // Override and implement this function in Settings
     }
 
+    virtual void ToggleBULBClicked()
+    {
+        // Override and implement this function in Settings
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());
@@ -47,7 +52,7 @@ protected:
     touchgfx::TextArea textArea1;
     touchgfx::ToggleButton BulbToggle;
     touchgfx::TextArea textArea2;
-    touchgfx::ToggleButton toggleButton1;
+    touchgfx::ToggleButton toggleFocus;
     touchgfx::TextArea textArea1_1;
     touchgfx::ButtonWithIcon ConfirmSettings;
     touchgfx::ButtonWithIcon CancelSettings;

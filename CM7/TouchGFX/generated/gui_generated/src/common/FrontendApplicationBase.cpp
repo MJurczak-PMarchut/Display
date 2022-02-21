@@ -17,6 +17,8 @@
 #include <gui/interval_screen/IntervalPresenter.hpp>
 #include <gui/settings_screen/SettingsView.hpp>
 #include <gui/settings_screen/SettingsPresenter.hpp>
+#include <gui/work_screen/WorkView.hpp>
+#include <gui/work_screen/WorkPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -96,4 +98,17 @@ void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEast()
 void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEastImpl()
 {
     touchgfx::makeTransition<SettingsView, SettingsPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Work
+
+void FrontendApplicationBase::gotoWorkScreenCoverTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoWorkScreenCoverTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoWorkScreenCoverTransitionEastImpl()
+{
+    touchgfx::makeTransition<WorkView, WorkPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
