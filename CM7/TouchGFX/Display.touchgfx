@@ -312,8 +312,8 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Delay": 200,
-            "Interval": 1000
+            "Delay": 500,
+            "Interval": 100
           },
           {
             "Type": "RepeatButton",
@@ -324,8 +324,8 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Delay": 200,
-            "Interval": 1000
+            "Delay": 500,
+            "Interval": 100
           },
           {
             "Type": "Image",
@@ -354,8 +354,8 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Delay": 200,
-            "Interval": 1000
+            "Delay": 500,
+            "Interval": 100
           },
           {
             "Type": "Image",
@@ -375,8 +375,8 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Delay": 200,
-            "Interval": 1000
+            "Delay": 500,
+            "Interval": 100
           },
           {
             "Type": "Image",
@@ -396,8 +396,8 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Delay": 200,
-            "Interval": 1000
+            "Delay": 500,
+            "Interval": 100
           },
           {
             "Type": "Image",
@@ -417,8 +417,8 @@
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
             "Released": "__designer\\Blue_Buttons_Square_icon_button.png",
-            "Delay": 200,
-            "Interval": 1000
+            "Delay": 500,
+            "Interval": 100
           },
           {
             "Type": "Image",
@@ -489,7 +489,7 @@
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "AddHoursClickedBulb"
+              "FunctionName": "AddHoursClicked"
             }
           },
           {
@@ -500,7 +500,7 @@
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "AddMinutesClickedBulb"
+              "FunctionName": "AddMinutesClicked"
             }
           },
           {
@@ -511,7 +511,40 @@
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "AddSecondsClickedBulb"
+              "FunctionName": "AddSecondsClicked"
+            }
+          },
+          {
+            "InteractionName": "SubHours",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SubHours"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SubHoursClicked"
+            }
+          },
+          {
+            "InteractionName": "SubMinutes",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SubMinutes"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SubMinutesClicked"
+            }
+          },
+          {
+            "InteractionName": "SubSeconds",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SubSeconds"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SubSecondsClicked"
             }
           }
         ]
@@ -531,8 +564,8 @@
           {
             "Type": "DigitalClock",
             "Name": "digitalClock1",
-            "X": 47,
-            "Y": 114,
+            "X": 42,
+            "Y": 122,
             "Width": 217,
             "Height": 51,
             "TextColor": {
@@ -547,7 +580,7 @@
           {
             "Type": "RepeatButton",
             "Name": "AddSeconds",
-            "X": 181,
+            "X": 174,
             "Y": 62,
             "Width": 60,
             "Height": 60,
@@ -559,8 +592,8 @@
           {
             "Type": "RepeatButton",
             "Name": "SubSeconds",
-            "X": 181,
-            "Y": 165,
+            "X": 174,
+            "Y": 173,
             "Width": 60,
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
@@ -571,7 +604,7 @@
           {
             "Type": "Image",
             "Name": "image2",
-            "X": 188,
+            "X": 181,
             "Y": 68,
             "Width": 46,
             "Height": 46,
@@ -580,8 +613,8 @@
           {
             "Type": "Image",
             "Name": "image2_1",
-            "X": 188,
-            "Y": 172,
+            "X": 181,
+            "Y": 180,
             "Width": 46,
             "Height": 46,
             "RelativeFilename": "__designer\\Blue_Icons_Sub_new_48.png"
@@ -589,8 +622,8 @@
           {
             "Type": "RepeatButton",
             "Name": "SubMinutes",
-            "X": 112,
-            "Y": 165,
+            "X": 107,
+            "Y": 172,
             "Width": 60,
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
@@ -601,8 +634,8 @@
           {
             "Type": "Image",
             "Name": "image2_1_1",
-            "X": 119,
-            "Y": 172,
+            "X": 114,
+            "Y": 179,
             "Width": 46,
             "Height": 46,
             "RelativeFilename": "__designer\\Blue_Icons_Sub_new_48.png"
@@ -610,8 +643,8 @@
           {
             "Type": "RepeatButton",
             "Name": "SubHours",
-            "X": 43,
-            "Y": 165,
+            "X": 38,
+            "Y": 172,
             "Width": 60,
             "Height": 60,
             "Pressed": "__designer\\Blue_Buttons_Square_icon_button_pressed.png",
@@ -622,8 +655,8 @@
           {
             "Type": "Image",
             "Name": "image2_1_1_1",
-            "X": 50,
-            "Y": 172,
+            "X": 45,
+            "Y": 179,
             "Width": 46,
             "Height": 46,
             "RelativeFilename": "__designer\\Blue_Icons_Sub_new_48.png"
@@ -631,7 +664,7 @@
           {
             "Type": "RepeatButton",
             "Name": "AddMinutes",
-            "X": 112,
+            "X": 107,
             "Y": 61,
             "Width": 60,
             "Height": 60,
@@ -643,8 +676,8 @@
           {
             "Type": "Image",
             "Name": "image2_2",
-            "X": 119,
-            "Y": 67,
+            "X": 114,
+            "Y": 68,
             "Width": 46,
             "Height": 46,
             "RelativeFilename": "__designer\\Blue_Icons_Add_new_48.png"
@@ -652,7 +685,7 @@
           {
             "Type": "RepeatButton",
             "Name": "AddHours",
-            "X": 43,
+            "X": 38,
             "Y": 62,
             "Width": 60,
             "Height": 60,
@@ -664,7 +697,7 @@
           {
             "Type": "Image",
             "Name": "image2_3",
-            "X": 50,
+            "X": 45,
             "Y": 68,
             "Width": 46,
             "Height": 46,
@@ -729,7 +762,7 @@
             },
             "Action": {
               "Type": "ActionCustom",
-              "FunctionName": "ConfirmIntervalChange"
+              "FunctionName": "ConfirmChange"
             }
           },
           {
@@ -768,6 +801,72 @@
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "AddHours",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "AddHours"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "AddHoursClicked"
+            }
+          },
+          {
+            "InteractionName": "AddMinutes",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "AddMinutes"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "AddMinutesClicked"
+            }
+          },
+          {
+            "InteractionName": "AddSeconds",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "AddSeconds"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "AddSecondsClicked"
+            }
+          },
+          {
+            "InteractionName": "SubHours",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SubHours"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SubHoursClicked"
+            }
+          },
+          {
+            "InteractionName": "SubMinutes",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SubMinutes"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SubMinutesClicked"
+            }
+          },
+          {
+            "InteractionName": "SubSeconds",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "SubSeconds"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "SubSecondsClicked"
             }
           }
         ]

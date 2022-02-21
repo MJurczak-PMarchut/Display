@@ -1,10 +1,16 @@
 Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-IntervalViewBase.hpp:27:18:virtual void IntervalViewBase::ConfirmIntervalChange()	0	static
 IntervalViewBase.hpp:32:18:virtual void IntervalViewBase::CancelIntervalChange()	0	static
 IntervalView.hpp:11:13:IntervalView::~IntervalView()	0	static
-IntervalView.cpp:13:6:virtual void IntervalView::tearDownScreen()	0	static
-IntervalView.cpp:8:6:virtual void IntervalView::setupScreen()	0	static
+IntervalView.cpp:15:6:virtual void IntervalView::tearDownScreen()	0	static
+IntervalView.cpp:56:6:virtual void IntervalView::ConfirmChange()	4	static
+IntervalView.cpp:8:6:virtual void IntervalView::setupScreen()	16	static
+IntervalView.cpp:20:6:virtual void IntervalView::AddHoursClicked()	0	static
+IntervalView.cpp:26:6:virtual void IntervalView::AddMinutesClicked()	0	static
+IntervalView.cpp:32:6:virtual void IntervalView::AddSecondsClicked()	0	static
+IntervalView.cpp:38:6:virtual void IntervalView::SubHoursClicked()	0	static
+IntervalView.cpp:44:6:virtual void IntervalView::SubMinutesClicked()	0	static
+IntervalView.cpp:50:6:virtual void IntervalView::SubSecondsClicked()	0	static
 IntervalView.hpp:11:13:virtual IntervalView::~IntervalView()	8	static
 IntervalView.cpp:3:1:IntervalView::IntervalView()	8	static

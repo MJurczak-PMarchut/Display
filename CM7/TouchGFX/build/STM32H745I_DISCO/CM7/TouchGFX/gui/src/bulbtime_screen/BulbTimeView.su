@@ -1,10 +1,16 @@
 Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
 Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-BulbTimeViewBase.hpp:27:18:virtual void BulbTimeViewBase::ConfirmTimeChange()	0	static
 BulbTimeViewBase.hpp:32:18:virtual void BulbTimeViewBase::CancelTimeChange()	0	static
 BulbTimeView.hpp:11:13:BulbTimeView::~BulbTimeView()	0	static
-BulbTimeView.cpp:13:6:virtual void BulbTimeView::tearDownScreen()	0	static
-BulbTimeView.cpp:8:6:virtual void BulbTimeView::setupScreen()	0	static
+BulbTimeView.cpp:15:6:virtual void BulbTimeView::tearDownScreen()	0	static
+BulbTimeView.cpp:56:6:virtual void BulbTimeView::ConfirmTimeChange()	4	static
+BulbTimeView.cpp:8:6:virtual void BulbTimeView::setupScreen()	16	static
+BulbTimeView.cpp:20:6:virtual void BulbTimeView::AddHoursClicked()	0	static
+BulbTimeView.cpp:26:6:virtual void BulbTimeView::AddMinutesClicked()	0	static
+BulbTimeView.cpp:32:6:virtual void BulbTimeView::AddSecondsClicked()	0	static
+BulbTimeView.cpp:38:6:virtual void BulbTimeView::SubHoursClicked()	0	static
+BulbTimeView.cpp:44:6:virtual void BulbTimeView::SubMinutesClicked()	0	static
+BulbTimeView.cpp:50:6:virtual void BulbTimeView::SubSecondsClicked()	0	static
 BulbTimeView.hpp:11:13:virtual BulbTimeView::~BulbTimeView()	8	static
 BulbTimeView.cpp:3:1:BulbTimeView::BulbTimeView()	8	static

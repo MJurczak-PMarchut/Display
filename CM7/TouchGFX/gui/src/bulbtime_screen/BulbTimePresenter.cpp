@@ -16,3 +16,13 @@ void BulbTimePresenter::deactivate()
 {
 
 }
+
+void BulbTimePresenter::SaveTime(uint8_t saveHour, uint8_t saveMinute, uint8_t saveSecond)
+{
+	model->SaveTimeBulb(saveHour, saveMinute, saveSecond);
+}
+
+void BulbTimePresenter::GetTime(uint8_t *saveHour, uint8_t *saveMinute, uint8_t *saveSecond)
+{
+	model->GetTimeBulb(saveHour, saveMinute, saveSecond);
+}

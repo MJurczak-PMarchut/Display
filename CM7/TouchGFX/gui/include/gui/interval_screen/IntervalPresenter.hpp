@@ -25,6 +25,9 @@ public:
      */
     virtual void deactivate();
 
+    virtual void SaveTime(uint8_t saveHour, uint8_t saveMinute, uint8_t saveSecond);
+    virtual void GetTime(uint8_t *saveHour, uint8_t *saveMinute, uint8_t *saveSecond);
+
     virtual ~IntervalPresenter() {};
 
 private:

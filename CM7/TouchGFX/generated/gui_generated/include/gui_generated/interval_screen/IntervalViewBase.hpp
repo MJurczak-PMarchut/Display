@@ -24,12 +24,42 @@ public:
     /*
      * Virtual Action Handlers
      */
-    virtual void ConfirmIntervalChange()
+    virtual void ConfirmChange()
     {
         // Override and implement this function in Interval
     }
 
     virtual void CancelIntervalChange()
+    {
+        // Override and implement this function in Interval
+    }
+
+    virtual void AddHoursClicked()
+    {
+        // Override and implement this function in Interval
+    }
+
+    virtual void AddMinutesClicked()
+    {
+        // Override and implement this function in Interval
+    }
+
+    virtual void AddSecondsClicked()
+    {
+        // Override and implement this function in Interval
+    }
+
+    virtual void SubHoursClicked()
+    {
+        // Override and implement this function in Interval
+    }
+
+    virtual void SubMinutesClicked()
+    {
+        // Override and implement this function in Interval
+    }
+
+    virtual void SubSecondsClicked()
     {
         // Override and implement this function in Interval
     }

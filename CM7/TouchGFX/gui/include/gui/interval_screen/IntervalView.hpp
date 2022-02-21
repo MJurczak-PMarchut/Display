@@ -11,7 +11,18 @@ public:
     virtual ~IntervalView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    virtual void AddHoursClicked();
+    virtual void AddMinutesClicked();
+    virtual void AddSecondsClicked();
+    virtual void SubHoursClicked();
+    virtual void SubMinutesClicked();
+    virtual void SubSecondsClicked();
+    virtual void ConfirmChange();
 protected:
+private:
+    uint8_t hours = 0;
+    uint8_t minutes = 0;
+    uint8_t seconds = 0;
 };
 
 #endif // INTERVALVIEW_HPP

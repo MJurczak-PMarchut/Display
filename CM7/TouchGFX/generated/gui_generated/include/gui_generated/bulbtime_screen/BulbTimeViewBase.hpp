@@ -34,17 +34,32 @@ public:
         // Override and implement this function in BulbTime
     }
 
-    virtual void AddHoursClickedBulb()
+    virtual void AddHoursClicked()
     {
         // Override and implement this function in BulbTime
     }
 
-    virtual void AddMinutesClickedBulb()
+    virtual void AddMinutesClicked()
     {
         // Override and implement this function in BulbTime
     }
 
-    virtual void AddSecondsClickedBulb()
+    virtual void AddSecondsClicked()
+    {
+        // Override and implement this function in BulbTime
+    }
+
+    virtual void SubHoursClicked()
+    {
+        // Override and implement this function in BulbTime
+    }
+
+    virtual void SubMinutesClicked()
+    {
+        // Override and implement this function in BulbTime
+    }
+
+    virtual void SubSecondsClicked()
     {
         // Override and implement this function in BulbTime
     }

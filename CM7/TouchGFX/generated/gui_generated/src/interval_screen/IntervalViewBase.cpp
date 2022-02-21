@@ -16,59 +16,65 @@ IntervalViewBase::IntervalViewBase() :
     image3.setXY(-17, -16);
     image3.setBitmap(touchgfx::Bitmap(BITMAP_ABSTRACT_HUD_UI_GUI_FUTURE_FUTURISTIC_SCREEN_SYSTEM_VIRTUAL_BACKGROUND_115579_779_ID));
 
-    digitalClock1.setPosition(47, 114, 217, 51);
+    digitalClock1.setPosition(42, 122, 217, 51);
     digitalClock1.setColor(touchgfx::Color::getColorFromRGB(201, 201, 255));
     digitalClock1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AC53));
     digitalClock1.displayLeadingZeroForHourIndicator(true);
     digitalClock1.setDisplayMode(touchgfx::DigitalClock::DISPLAY_24_HOUR);
     digitalClock1.setTime24Hour(0, 0, 0);
 
-    AddSeconds.setXY(181, 62);
+    AddSeconds.setXY(174, 62);
     AddSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     AddSeconds.setDelay(12);
     AddSeconds.setInterval(60);
+    AddSeconds.setAction(buttonCallback);
 
-    SubSeconds.setXY(181, 165);
+    SubSeconds.setXY(174, 173);
     SubSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     SubSeconds.setDelay(12);
     SubSeconds.setInterval(60);
+    SubSeconds.setAction(buttonCallback);
 
-    image2.setXY(188, 68);
+    image2.setXY(181, 68);
     image2.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_48_ID));
 
-    image2_1.setXY(188, 172);
+    image2_1.setXY(181, 180);
     image2_1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_SUB_NEW_48_ID));
 
-    SubMinutes.setXY(112, 165);
+    SubMinutes.setXY(107, 172);
     SubMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     SubMinutes.setDelay(12);
     SubMinutes.setInterval(60);
+    SubMinutes.setAction(buttonCallback);
 
-    image2_1_1.setXY(119, 172);
+    image2_1_1.setXY(114, 179);
     image2_1_1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_SUB_NEW_48_ID));
 
-    SubHours.setXY(43, 165);
+    SubHours.setXY(38, 172);
     SubHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     SubHours.setDelay(12);
     SubHours.setInterval(60);
+    SubHours.setAction(buttonCallback);
 
-    image2_1_1_1.setXY(50, 172);
+    image2_1_1_1.setXY(45, 179);
     image2_1_1_1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_SUB_NEW_48_ID));
 
-    AddMinutes.setXY(112, 61);
+    AddMinutes.setXY(107, 61);
     AddMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     AddMinutes.setDelay(12);
     AddMinutes.setInterval(60);
+    AddMinutes.setAction(buttonCallback);
 
-    image2_2.setXY(119, 67);
+    image2_2.setXY(114, 68);
     image2_2.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_48_ID));
 
-    AddHours.setXY(43, 62);
+    AddHours.setXY(38, 62);
     AddHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     AddHours.setDelay(12);
     AddHours.setInterval(60);
+    AddHours.setAction(buttonCallback);
 
-    image2_3.setXY(50, 68);
+    image2_3.setXY(45, 68);
     image2_3.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_48_ID));
 
     ConfirmInterval.setXY(365, 69);
@@ -113,12 +119,54 @@ void IntervalViewBase::setupScreen()
 
 void IntervalViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &ConfirmInterval)
+    if (&src == &AddSeconds)
+    {
+        //AddSeconds
+        //When AddSeconds clicked call virtual function
+        //Call AddSecondsClicked
+        AddSecondsClicked();
+    }
+    else if (&src == &SubSeconds)
+    {
+        //SubSeconds
+        //When SubSeconds clicked call virtual function
+        //Call SubSecondsClicked
+        SubSecondsClicked();
+    }
+    else if (&src == &SubMinutes)
+    {
+        //SubMinutes
+        //When SubMinutes clicked call virtual function
+        //Call SubMinutesClicked
+        SubMinutesClicked();
+    }
+    else if (&src == &SubHours)
+    {
+        //SubHours
+        //When SubHours clicked call virtual function
+        //Call SubHoursClicked
+        SubHoursClicked();
+    }
+    else if (&src == &AddMinutes)
+    {
+        //AddMinutes
+        //When AddMinutes clicked call virtual function
+        //Call AddMinutesClicked
+        AddMinutesClicked();
+    }
+    else if (&src == &AddHours)
+    {
+        //AddHours
+        //When AddHours clicked call virtual function
+        //Call AddHoursClicked
+        AddHoursClicked();
+    }
+    else if (&src == &ConfirmInterval)
     {
         //ConfirmInterval
         //When ConfirmInterval clicked call virtual function
-        //Call ConfirmIntervalChange
-        ConfirmIntervalChange();
+        //Call ConfirmChange
+        ConfirmChange();
 
         //ReturnToMainScreen
         //When ConfirmInterval completed change screen to Screen1

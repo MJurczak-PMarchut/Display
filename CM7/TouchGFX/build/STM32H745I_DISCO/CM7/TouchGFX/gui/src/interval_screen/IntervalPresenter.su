@@ -1,5 +1,7 @@
-IntervalPresenter.hpp:28:13:IntervalPresenter::~IntervalPresenter()	0	static
+IntervalPresenter.hpp:31:13:IntervalPresenter::~IntervalPresenter()	0	static
 IntervalPresenter.cpp:10:6:virtual void IntervalPresenter::activate()	0	static
-IntervalPresenter.hpp:28:13:virtual IntervalPresenter::~IntervalPresenter()	8	static
-IntervalPresenter.hpp:28:13:virtual void* IntervalPresenter::_ZThn4_N17IntervalPresenterD1Ev()	0	static
+IntervalPresenter.hpp:31:13:virtual IntervalPresenter::~IntervalPresenter()	8	static
+IntervalPresenter.cpp:20:6:virtual void IntervalPresenter::SaveTime(uint8_t, uint8_t, uint8_t)	0	static
+IntervalPresenter.cpp:25:6:virtual void IntervalPresenter::GetTime(uint8_t*, uint8_t*, uint8_t*)	0	static
+IntervalPresenter.hpp:31:13:virtual void* IntervalPresenter::_ZThn4_N17IntervalPresenterD1Ev()	0	static
 IntervalPresenter.cpp:4:1:IntervalPresenter::IntervalPresenter(IntervalView&)	8	static

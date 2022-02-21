@@ -40,14 +40,15 @@ BulbTimeViewBase::BulbTimeViewBase() :
 
     AddSeconds.setXY(176, 70);
     AddSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    AddSeconds.setDelay(12);
-    AddSeconds.setInterval(60);
+    AddSeconds.setDelay(30);
+    AddSeconds.setInterval(6);
     AddSeconds.setAction(buttonCallback);
 
     SubSeconds.setXY(176, 173);
     SubSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    SubSeconds.setDelay(12);
-    SubSeconds.setInterval(60);
+    SubSeconds.setDelay(30);
+    SubSeconds.setInterval(6);
+    SubSeconds.setAction(buttonCallback);
 
     image2.setXY(183, 76);
     image2.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_48_ID));
@@ -57,24 +58,26 @@ BulbTimeViewBase::BulbTimeViewBase() :
 
     SubMinutes.setXY(107, 173);
     SubMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    SubMinutes.setDelay(12);
-    SubMinutes.setInterval(60);
+    SubMinutes.setDelay(30);
+    SubMinutes.setInterval(6);
+    SubMinutes.setAction(buttonCallback);
 
     image2_1_1.setXY(114, 180);
     image2_1_1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_SUB_NEW_48_ID));
 
     SubHours.setXY(38, 173);
     SubHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    SubHours.setDelay(12);
-    SubHours.setInterval(60);
+    SubHours.setDelay(30);
+    SubHours.setInterval(6);
+    SubHours.setAction(buttonCallback);
 
     image2_1_1_1.setXY(45, 180);
     image2_1_1_1.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_SUB_NEW_48_ID));
 
     AddMinutes.setXY(107, 69);
     AddMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    AddMinutes.setDelay(12);
-    AddMinutes.setInterval(60);
+    AddMinutes.setDelay(30);
+    AddMinutes.setInterval(6);
     AddMinutes.setAction(buttonCallback);
 
     image2_2.setXY(114, 75);
@@ -82,8 +85,8 @@ BulbTimeViewBase::BulbTimeViewBase() :
 
     AddHours.setXY(38, 70);
     AddHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    AddHours.setDelay(12);
-    AddHours.setInterval(60);
+    AddHours.setDelay(30);
+    AddHours.setInterval(6);
     AddHours.setAction(buttonCallback);
 
     image2_3.setXY(45, 76);
@@ -144,21 +147,42 @@ void BulbTimeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
     {
         //AddSeconds
         //When AddSeconds clicked call virtual function
-        //Call AddSecondsClickedBulb
-        AddSecondsClickedBulb();
+        //Call AddSecondsClicked
+        AddSecondsClicked();
+    }
+    else if (&src == &SubSeconds)
+    {
+        //SubSeconds
+        //When SubSeconds clicked call virtual function
+        //Call SubSecondsClicked
+        SubSecondsClicked();
+    }
+    else if (&src == &SubMinutes)
+    {
+        //SubMinutes
+        //When SubMinutes clicked call virtual function
+        //Call SubMinutesClicked
+        SubMinutesClicked();
+    }
+    else if (&src == &SubHours)
+    {
+        //SubHours
+        //When SubHours clicked call virtual function
+        //Call SubHoursClicked
+        SubHoursClicked();
     }
     else if (&src == &AddMinutes)
     {
         //AddMinutes
         //When AddMinutes clicked call virtual function
-        //Call AddMinutesClickedBulb
-        AddMinutesClickedBulb();
+        //Call AddMinutesClicked
+        AddMinutesClicked();
     }
     else if (&src == &AddHours)
     {
         //AddHours
         //When AddHours clicked call virtual function
-        //Call AddHoursClickedBulb
-        AddHoursClickedBulb();
+        //Call AddHoursClicked
+        AddHoursClicked();
     }
 }
