@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextDatabase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="texts.xsd" Version="4.18.1">
+  <Texts>
+    <Text Id="__SingleUse_8M8R" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Interwał</Translation>
+    </Text>
+    <Text Id="ResourceId1" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">!</Translation>
+    </Text>
+    <Text Id="__SingleUse_BHKN" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Czas</Translation>
+    </Text>
+    <Text Id="__SingleUse_3GVQ" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Powtórzenia</Translation>
+    </Text>
+    <Text Id="__SingleUse_SWCD" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Start</Translation>
+    </Text>
+    <Text Id="__SingleUse_C5E2" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_VP6J" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Czas</Translation>
+    </Text>
+    <Text Id="__SingleUse_FKR2" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_O2WU" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Czas</Translation>
+    </Text>
+    <Text Id="__SingleUse_M4G0" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;value&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_CUY9" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Repetitions</Translation>
+    </Text>
+    <Text Id="__SingleUse_U2BP" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Czas</Translation>
+    </Text>
+    <Text Id="__SingleUse_JK8N" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_AC53" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">&lt;&gt;</Translation>
+    </Text>
+    <Text Id="__SingleUse_GENI" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Interwał</Translation>
+    </Text>
+    <Text Id="__SingleUse_8V9E" TypographyId="Large" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Ustawienia</Translation>
+    </Text>
+    <Text Id="__SingleUse_O46V" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">BULB ?</Translation>
+    </Text>
+    <Text Id="__SingleUse_LRAN" TypographyId="Default" Alignment="Left" Direction="LTR">
+      <Translation Language="GB">Ostrość</Translation>
+    </Text>
+    <Text Id="__SingleUse_FPCC" TypographyId="Default" Alignment="Center" Direction="LTR">
+      <Translation Language="GB">Język</Translation>
+    </Text>
+  </Texts>
+  <Typographies>
+    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" FallbackCharacter="?" WildcardCharacters="0-9,!" WildcardCharacterRanges="0-9,!-)" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" FallbackCharacter="?" WidgetWildcardCharacters="0123456789 :APM" />
+    <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" FallbackCharacter="?" />
+    <Typography Id="Polish" Font="arial.ttf" Size="10" Bpp="4" FallbackCharacter="?" />
+  </Typographies>
+</TextDatabase>

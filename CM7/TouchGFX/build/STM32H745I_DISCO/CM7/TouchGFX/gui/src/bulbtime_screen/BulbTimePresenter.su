@@ -1,0 +1,5 @@
+BulbTimePresenter.hpp:28:13:BulbTimePresenter::~BulbTimePresenter()	0	static
+BulbTimePresenter.cpp:10:6:virtual void BulbTimePresenter::activate()	0	static
+BulbTimePresenter.hpp:28:13:virtual BulbTimePresenter::~BulbTimePresenter()	8	static
+BulbTimePresenter.hpp:28:13:virtual void* BulbTimePresenter::_ZThn4_N17BulbTimePresenterD1Ev()	0	static
+BulbTimePresenter.cpp:4:1:BulbTimePresenter::BulbTimePresenter(BulbTimeView&)	8	static
