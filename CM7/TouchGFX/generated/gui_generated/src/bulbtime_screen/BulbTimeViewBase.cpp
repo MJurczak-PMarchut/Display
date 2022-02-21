@@ -42,6 +42,7 @@ BulbTimeViewBase::BulbTimeViewBase() :
     AddSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     AddSeconds.setDelay(12);
     AddSeconds.setInterval(60);
+    AddSeconds.setAction(buttonCallback);
 
     SubSeconds.setXY(176, 173);
     SubSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
@@ -74,6 +75,7 @@ BulbTimeViewBase::BulbTimeViewBase() :
     AddMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     AddMinutes.setDelay(12);
     AddMinutes.setInterval(60);
+    AddMinutes.setAction(buttonCallback);
 
     image2_2.setXY(114, 75);
     image2_2.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_48_ID));
@@ -82,6 +84,7 @@ BulbTimeViewBase::BulbTimeViewBase() :
     AddHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
     AddHours.setDelay(12);
     AddHours.setInterval(60);
+    AddHours.setAction(buttonCallback);
 
     image2_3.setXY(45, 76);
     image2_3.setBitmap(touchgfx::Bitmap(BITMAP_BLUE_ICONS_ADD_NEW_48_ID));
@@ -136,5 +139,26 @@ void BulbTimeViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src
         //When CancelTimeChange completed change screen to Screen1
         //Go to Screen1 with screen transition towards East
         application().gotoScreen1ScreenCoverTransitionEast();
+    }
+    else if (&src == &AddSeconds)
+    {
+        //AddSeconds
+        //When AddSeconds clicked call virtual function
+        //Call AddSecondsClickedBulb
+        AddSecondsClickedBulb();
+    }
+    else if (&src == &AddMinutes)
+    {
+        //AddMinutes
+        //When AddMinutes clicked call virtual function
+        //Call AddMinutesClickedBulb
+        AddMinutesClickedBulb();
+    }
+    else if (&src == &AddHours)
+    {
+        //AddHours
+        //When AddHours clicked call virtual function
+        //Call AddHoursClickedBulb
+        AddHoursClickedBulb();
     }
 }

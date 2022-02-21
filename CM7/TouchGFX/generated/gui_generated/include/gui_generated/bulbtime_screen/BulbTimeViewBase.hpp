@@ -34,6 +34,21 @@ public:
         // Override and implement this function in BulbTime
     }
 
+    virtual void AddHoursClickedBulb()
+    {
+        // Override and implement this function in BulbTime
+    }
+
+    virtual void AddMinutesClickedBulb()
+    {
+        // Override and implement this function in BulbTime
+    }
+
+    virtual void AddSecondsClickedBulb()
+    {
+        // Override and implement this function in BulbTime
+    }
+
 protected:
     FrontendApplication& application() {
         return *static_cast<FrontendApplication*>(touchgfx::Application::getInstance());

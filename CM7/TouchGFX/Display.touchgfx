@@ -480,6 +480,39 @@
               "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen1"
             }
+          },
+          {
+            "InteractionName": "AddHours",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "AddHours"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "AddHoursClickedBulb"
+            }
+          },
+          {
+            "InteractionName": "AddMinutes",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "AddMinutes"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "AddMinutesClickedBulb"
+            }
+          },
+          {
+            "InteractionName": "AddSeconds",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "AddSeconds"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "AddSecondsClickedBulb"
+            }
           }
         ]
       },
