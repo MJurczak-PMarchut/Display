@@ -28,6 +28,7 @@ public:
     virtual void GetTimeBulb(uint8_t *saveHour, uint8_t *saveMinute, uint8_t *saveSecond);
     virtual void GetTimeInterval(uint8_t *saveHour, uint8_t *saveMinute, uint8_t *saveSecond);
     virtual bool GetBULBInfo();
+    uint32_t GetRepetitionCount();
     virtual ~Screen1Presenter() {};
 
 private:

@@ -1,4 +1,6 @@
 new:173:33:void* operator new(std::size_t, void*)	16	static
+Types.hpp:127:5:touchgfx::Rect::Rect()	16	static
+Types.hpp:140:5:touchgfx::Rect::Rect(int16_t, int16_t, int16_t, int16_t)	24	static
 UIEventListener.hpp:44:18:virtual void touchgfx::UIEventListener::handleClickEvent(const touchgfx::ClickEvent&)	16	static
 UIEventListener.hpp:53:18:virtual void touchgfx::UIEventListener::handleDragEvent(const touchgfx::DragEvent&)	16	static
 UIEventListener.hpp:62:18:virtual void touchgfx::UIEventListener::handleGestureEvent(const touchgfx::GestureEvent&)	16	static
@@ -11,11 +13,13 @@ Application.hpp:74:18:virtual void touchgfx::Application::appSwitchScreen(uint8_
 Application.hpp:86:18:virtual void touchgfx::Application::requestRedraw(touchgfx::Rect&)	16	static
 Callback.hpp:179:13:touchgfx::GenericCallback<void>::~GenericCallback()	16	static
 Callback.hpp:179:13:virtual touchgfx::GenericCallback<void>::~GenericCallback()	16	static
+Drawable.hpp:48:5:touchgfx::Drawable::Drawable()	16	static
 Drawable.hpp:62:13:touchgfx::Drawable::~Drawable()	16	static
 Drawable.hpp:62:13:virtual touchgfx::Drawable::~Drawable()	16	static
 Drawable.hpp:132:23:virtual touchgfx::Drawable* touchgfx::Drawable::getFirstChild()	16	static
 Drawable.hpp:216:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
-Drawable.hpp:256:13:int16_t touchgfx::Drawable::getX() const	16	static
+Drawable.hpp:276:13:int16_t touchgfx::Drawable::getWidth() const	16	static
+Drawable.hpp:286:13:int16_t touchgfx::Drawable::getHeight() const	16	static
 Drawable.hpp:298:18:virtual void touchgfx::Drawable::setX(int16_t)	16	static
 Drawable.hpp:310:18:virtual void touchgfx::Drawable::setY(int16_t)	16	static
 Drawable.hpp:326:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
@@ -55,47 +59,81 @@ FrontendApplicationBase.hpp:16:13:virtual FrontendApplicationBase::~FrontendAppl
 NoTransition.hpp:35:18:virtual void touchgfx::NoTransition::handleTickEvent()	16	static
 Widget.hpp:47:18:virtual void touchgfx::Widget::getLastChild(int16_t, int16_t, touchgfx::Drawable**)	24	static
 ModelListener.hpp:13:10:void ModelListener::bind(Model*)	16	static
+Widget.hpp:36:7:touchgfx::Widget::Widget()	16	static
 Widget.hpp:36:7:touchgfx::Widget::~Widget()	16	static
 Widget.hpp:36:7:virtual touchgfx::Widget::~Widget()	16	static
-FrontendApplicationBase.cpp:19:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
+FrontendApplicationBase.cpp:27:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	24	static
 Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>& touchgfx::GenericCallback<void>::operator=(const touchgfx::GenericCallback<void>&)	16	static
 Callback.hpp:424:8:constexpr touchgfx::Callback<FrontendApplicationBase>& touchgfx::Callback<FrontendApplicationBase>::operator=(touchgfx::Callback<FrontendApplicationBase>&&)	16	static
-FrontendApplicationBase.cpp:36:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	48	static
-FrontendApplicationBase.cpp:42:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	24	static
-FrontendApplicationBase.cpp:47:6:void FrontendApplicationBase::gotoScreen1ScreenSlideTransitionEast()	48	static
-FrontendApplicationBase.cpp:53:6:void FrontendApplicationBase::gotoScreen1ScreenSlideTransitionEastImpl()	24	static
+FrontendApplicationBase.cpp:44:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	48	static
+FrontendApplicationBase.cpp:50:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	24	static
+FrontendApplicationBase.cpp:55:6:void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEast()	48	static
+FrontendApplicationBase.cpp:61:6:void FrontendApplicationBase::gotoScreen1ScreenCoverTransitionEastImpl()	24	static
+FrontendApplicationBase.cpp:68:6:void FrontendApplicationBase::gotoBulbTimeScreenCoverTransitionEast()	48	static
+FrontendApplicationBase.cpp:74:6:void FrontendApplicationBase::gotoBulbTimeScreenCoverTransitionEastImpl()	24	static
+FrontendApplicationBase.cpp:81:6:void FrontendApplicationBase::gotoIntervalScreenCoverTransitionEast()	48	static
+FrontendApplicationBase.cpp:87:6:void FrontendApplicationBase::gotoIntervalScreenCoverTransitionEastImpl()	24	static
+FrontendApplicationBase.cpp:94:6:void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEast()	48	static
+FrontendApplicationBase.cpp:100:6:void FrontendApplicationBase::gotoSettingsScreenCoverTransitionEastImpl()	24	static
+FrontendApplicationBase.cpp:107:6:void FrontendApplicationBase::gotoWorkScreenCoverTransitionEast()	48	static
+FrontendApplicationBase.cpp:113:6:void FrontendApplicationBase::gotoWorkScreenCoverTransitionEastImpl()	24	static
+FrontendApplicationBase.cpp:120:6:void FrontendApplicationBase::gotoRepetitionsScreenCoverTransitionEast()	48	static
+FrontendApplicationBase.cpp:126:6:void FrontendApplicationBase::gotoRepetitionsScreenCoverTransitionEastImpl()	24	static
 Callback.hpp:175:7:constexpr touchgfx::GenericCallback<void>::GenericCallback()	16	static
 Callback.hpp:427:5:touchgfx::Callback<dest_type, void, void, void>::Callback() [with dest_type = FrontendApplicationBase]	16	static
 Callback.hpp:440:5:touchgfx::Callback<dest_type, void, void, void>::Callback(dest_type*, void (dest_type::*)()) [with dest_type = FrontendApplicationBase]	24	static
 NoTransition.hpp:31:7:touchgfx::NoTransition::NoTransition()	16	static
 MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = Screen1View; PresenterType = Screen1Presenter; TransType = touchgfx::NoTransition; ModelType = Model]	72	static
-MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = Screen1View; PresenterType = Screen1Presenter; TransType = touchgfx::SlideTransition<touchgfx::EAST>; ModelType = Model]	72	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = Screen1View; PresenterType = Screen1Presenter; TransType = touchgfx::CoverTransition<touchgfx::EAST>; ModelType = Model]	72	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = BulbTimeView; PresenterType = BulbTimePresenter; TransType = touchgfx::CoverTransition<touchgfx::EAST>; ModelType = Model]	72	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = IntervalView; PresenterType = IntervalPresenter; TransType = touchgfx::CoverTransition<touchgfx::EAST>; ModelType = Model]	72	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = SettingsView; PresenterType = SettingsPresenter; TransType = touchgfx::CoverTransition<touchgfx::EAST>; ModelType = Model]	72	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = WorkView; PresenterType = WorkPresenter; TransType = touchgfx::CoverTransition<touchgfx::EAST>; ModelType = Model]	72	static
+MVPApplication.hpp:161:16:PresenterType* touchgfx::makeTransition(touchgfx::Screen**, touchgfx::Presenter**, touchgfx::MVPHeap&, touchgfx::Transition**, ModelType*) [with ScreenType = RepetitionsView; PresenterType = RepetitionsPresenter; TransType = touchgfx::CoverTransition<touchgfx::EAST>; ModelType = Model]	72	static
 AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::NoTransition]	16	static
 AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = Screen1View]	16	static
 AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = Screen1Presenter]	16	static
 View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = Screen1Presenter]	16	static
-AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::SlideTransition<touchgfx::EAST>]	16	static
-SnapshotWidget.hpp:33:7:touchgfx::SnapshotWidget::~SnapshotWidget()	16	static
-SnapshotWidget.hpp:33:7:virtual touchgfx::SnapshotWidget::~SnapshotWidget()	16	static
-Callback.hpp:357:8:touchgfx::Callback<touchgfx::SlideTransition<touchgfx::EAST>, touchgfx::Drawable&, void, void>::~Callback()	16	static
-Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::SlideTransition<touchgfx::EAST>, touchgfx::Drawable&, void, void>::~Callback()	16	static
-SlideTransition.hpp:47:5:touchgfx::SlideTransition<templateDirection>::SlideTransition(uint8_t) [with touchgfx::Direction templateDirection = touchgfx::EAST]	40	static
-SlideTransition.hpp:200:18:void touchgfx::SlideTransition<templateDirection>::tickMoveDrawable(touchgfx::Drawable&) [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::CoverTransition<touchgfx::EAST>]	16	static
+Callback.hpp:357:8:touchgfx::Callback<touchgfx::CoverTransition<touchgfx::EAST>, touchgfx::Drawable&, void, void>::~Callback()	16	static
+Callback.hpp:357:8:virtual touchgfx::Callback<touchgfx::CoverTransition<touchgfx::EAST>, touchgfx::Drawable&, void, void>::~Callback()	16	static
+CoverTransition.hpp:236:11:touchgfx::CoverTransition<touchgfx::EAST>::FullSolidRect::FullSolidRect()	16	static
+CoverTransition.hpp:236:11:touchgfx::CoverTransition<touchgfx::EAST>::FullSolidRect::~FullSolidRect()	16	static
+CoverTransition.hpp:236:11:virtual touchgfx::CoverTransition<touchgfx::EAST>::FullSolidRect::~FullSolidRect()	16	static
+CoverTransition.hpp:45:5:touchgfx::CoverTransition<templateDirection>::CoverTransition(uint8_t) [with touchgfx::Direction templateDirection = touchgfx::EAST]	40	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = BulbTimeView]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = BulbTimePresenter]	16	static
+View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = BulbTimePresenter]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = IntervalView]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = IntervalPresenter]	16	static
+View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = IntervalPresenter]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = SettingsView]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = SettingsPresenter]	16	static
+View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = SettingsPresenter]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = WorkView]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = WorkPresenter]	16	static
+View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = WorkPresenter]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = RepetitionsView]	16	static
+AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = RepetitionsPresenter]	16	static
+View.hpp:50:10:void touchgfx::View<T>::bind(T&) [with T = RepetitionsPresenter]	16	static
+CoverTransition.hpp:216:18:void touchgfx::CoverTransition<templateDirection>::tickMoveDrawable(touchgfx::Drawable&) [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
 Callback.hpp:134:7:constexpr touchgfx::GenericCallback<touchgfx::Drawable&>::GenericCallback()	16	static
-Callback.hpp:373:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = touchgfx::SlideTransition<touchgfx::EAST>; T1 = touchgfx::Drawable&]	24	static
+Callback.hpp:373:5:touchgfx::Callback<dest_type, T1, void, void>::Callback(dest_type*, void (dest_type::*)(T1)) [with dest_type = touchgfx::CoverTransition<touchgfx::EAST>; T1 = touchgfx::Drawable&]	24	static
 Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = touchgfx::Drawable&]	16	static
 Callback.hpp:138:13:touchgfx::GenericCallback<T1, void, void>::~GenericCallback() [with T1 = touchgfx::Drawable&]	16	static
-SlideTransition.hpp:39:7:touchgfx::SlideTransition<touchgfx::EAST>::~SlideTransition()	16	static
-SlideTransition.hpp:39:7:virtual touchgfx::SlideTransition<touchgfx::EAST>::~SlideTransition()	16	static
+CoverTransition.hpp:37:7:touchgfx::CoverTransition<touchgfx::EAST>::~CoverTransition()	16	static
+CoverTransition.hpp:37:7:virtual touchgfx::CoverTransition<touchgfx::EAST>::~CoverTransition()	16	static
 NoTransition.hpp:31:7:touchgfx::NoTransition::~NoTransition()	16	static
 NoTransition.hpp:31:7:virtual touchgfx::NoTransition::~NoTransition()	16	static
 Callback.hpp:424:8:touchgfx::Callback<FrontendApplicationBase>::~Callback()	16	static
 Callback.hpp:424:8:virtual touchgfx::Callback<FrontendApplicationBase>::~Callback()	16	static
-SlideTransition.hpp:89:18:void touchgfx::SlideTransition<templateDirection>::handleTickEvent() [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
-SlideTransition.hpp:146:18:void touchgfx::SlideTransition<templateDirection>::tearDown() [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
-SlideTransition.hpp:154:18:void touchgfx::SlideTransition<templateDirection>::init() [with touchgfx::Direction templateDirection = touchgfx::EAST]	40	static
-SlideTransition.hpp:173:18:void touchgfx::SlideTransition<templateDirection>::initMoveDrawable(touchgfx::Drawable&) [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
-Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::SlideTransition<touchgfx::EAST>; T1 = touchgfx::Drawable&]	16	static
-Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::SlideTransition<touchgfx::EAST>; T1 = touchgfx::Drawable&]	16	static
+CoverTransition.hpp:83:18:void touchgfx::CoverTransition<templateDirection>::handleTickEvent() [with touchgfx::Direction templateDirection = touchgfx::EAST]	56	static
+CoverTransition.hpp:169:18:void touchgfx::CoverTransition<templateDirection>::tearDown() [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
+CoverTransition.hpp:174:18:void touchgfx::CoverTransition<templateDirection>::init() [with touchgfx::Direction templateDirection = touchgfx::EAST]	40	static
+CoverTransition.hpp:189:18:void touchgfx::CoverTransition<templateDirection>::initMoveDrawable(touchgfx::Drawable&) [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
+CoverTransition.hpp:244:22:void touchgfx::CoverTransition<templateDirection>::FullSolidRect::draw(const touchgfx::Rect&) const [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
+CoverTransition.hpp:239:22:touchgfx::Rect touchgfx::CoverTransition<templateDirection>::FullSolidRect::getSolidRect() const [with touchgfx::Direction templateDirection = touchgfx::EAST]	32	static
+Callback.hpp:386:18:void touchgfx::Callback<dest_type, T1, void, void>::execute(T1) [with dest_type = touchgfx::CoverTransition<touchgfx::EAST>; T1 = touchgfx::Drawable&]	16	static
+Callback.hpp:396:18:bool touchgfx::Callback<dest_type, T1, void, void>::isValid() const [with dest_type = touchgfx::CoverTransition<touchgfx::EAST>; T1 = touchgfx::Drawable&]	16	static
 Callback.hpp:449:18:void touchgfx::Callback<dest_type, void, void, void>::execute() [with dest_type = FrontendApplicationBase]	16	static
 Callback.hpp:459:18:bool touchgfx::Callback<dest_type, void, void, void>::isValid() const [with dest_type = FrontendApplicationBase]	16	static

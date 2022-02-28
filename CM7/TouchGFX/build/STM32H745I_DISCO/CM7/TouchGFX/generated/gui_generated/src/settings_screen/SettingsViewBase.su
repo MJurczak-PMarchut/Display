@@ -36,4 +36,4 @@ Drawable.hpp:326:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
 TextArea.hpp:42:5:touchgfx::TextArea::TextArea()	8	static
 ButtonWithLabel.hpp:132:10:void touchgfx::ButtonWithLabel::updateTextPosition()	24	static
 ToggleButton.hpp:32:7:touchgfx::ToggleButton::ToggleButton()	8	static
-SettingsViewBase.cpp:9:1:SettingsViewBase::SettingsViewBase()	112	static
+SettingsViewBase.cpp:9:1:SettingsViewBase::SettingsViewBase()	104	static

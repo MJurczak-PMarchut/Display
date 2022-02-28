@@ -25,14 +25,14 @@ IntervalViewBase::IntervalViewBase() :
 
     AddSeconds.setXY(174, 62);
     AddSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    AddSeconds.setDelay(12);
-    AddSeconds.setInterval(60);
+    AddSeconds.setDelay(30);
+    AddSeconds.setInterval(6);
     AddSeconds.setAction(buttonCallback);
 
     SubSeconds.setXY(174, 173);
     SubSeconds.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    SubSeconds.setDelay(12);
-    SubSeconds.setInterval(60);
+    SubSeconds.setDelay(30);
+    SubSeconds.setInterval(6);
     SubSeconds.setAction(buttonCallback);
 
     image2.setXY(181, 68);
@@ -43,8 +43,8 @@ IntervalViewBase::IntervalViewBase() :
 
     SubMinutes.setXY(107, 172);
     SubMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    SubMinutes.setDelay(12);
-    SubMinutes.setInterval(60);
+    SubMinutes.setDelay(30);
+    SubMinutes.setInterval(6);
     SubMinutes.setAction(buttonCallback);
 
     image2_1_1.setXY(114, 179);
@@ -52,8 +52,8 @@ IntervalViewBase::IntervalViewBase() :
 
     SubHours.setXY(38, 172);
     SubHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    SubHours.setDelay(12);
-    SubHours.setInterval(60);
+    SubHours.setDelay(30);
+    SubHours.setInterval(6);
     SubHours.setAction(buttonCallback);
 
     image2_1_1_1.setXY(45, 179);
@@ -61,8 +61,8 @@ IntervalViewBase::IntervalViewBase() :
 
     AddMinutes.setXY(107, 61);
     AddMinutes.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    AddMinutes.setDelay(12);
-    AddMinutes.setInterval(60);
+    AddMinutes.setDelay(30);
+    AddMinutes.setInterval(6);
     AddMinutes.setAction(buttonCallback);
 
     image2_2.setXY(114, 68);
@@ -70,8 +70,8 @@ IntervalViewBase::IntervalViewBase() :
 
     AddHours.setXY(38, 62);
     AddHours.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_SQUARE_ICON_BUTTON_PRESSED_ID));
-    AddHours.setDelay(12);
-    AddHours.setInterval(60);
+    AddHours.setDelay(30);
+    AddHours.setInterval(6);
     AddHours.setAction(buttonCallback);
 
     image2_3.setXY(45, 68);

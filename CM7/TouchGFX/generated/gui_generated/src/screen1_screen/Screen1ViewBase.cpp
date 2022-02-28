@@ -35,6 +35,7 @@ Screen1ViewBase::Screen1ViewBase() :
     repetitions.setLabelText(touchgfx::TypedText(T___SINGLEUSE_3GVQ));
     repetitions.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     repetitions.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    repetitions.setAction(buttonCallback);
 
     StartButton.setXY(382, 58);
     StartButton.setBitmaps(touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_ID), touchgfx::Bitmap(BITMAP_BLUE_BUTTONS_ROUND_EDGE_ICON_BUTTON_PRESSED_ID));
@@ -104,6 +105,13 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When Czas clicked change screen to BulbTime
         //Go to BulbTime with screen transition towards East
         application().gotoBulbTimeScreenCoverTransitionEast();
+    }
+    else if (&src == &repetitions)
+    {
+        //ChangeScreenToRepetitions
+        //When repetitions clicked change screen to Repetitions
+        //Go to Repetitions with screen transition towards East
+        application().gotoRepetitionsScreenCoverTransitionEast();
     }
     else if (&src == &StartButton)
     {

@@ -32,6 +32,9 @@ public:
     // Work
     void gotoWorkScreenCoverTransitionEast();
 
+    // Repetitions
+    void gotoRepetitionsScreenCoverTransitionEast();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -53,6 +56,9 @@ protected:
 
     // Work
     void gotoWorkScreenCoverTransitionEastImpl();
+
+    // Repetitions
+    void gotoRepetitionsScreenCoverTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

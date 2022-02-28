@@ -33,3 +33,8 @@ bool Screen1Presenter::GetBULBInfo()
 	model->GetToggleSettings(&__BULB_state, &__Focus_state);
 	return __BULB_state;
 }
+
+uint32_t Screen1Presenter::GetRepetitionCount()
+{
+	return model->GetRepetitionCount();
+}

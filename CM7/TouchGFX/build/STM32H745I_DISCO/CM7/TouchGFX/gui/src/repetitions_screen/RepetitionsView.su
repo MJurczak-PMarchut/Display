@@ -1,0 +1,12 @@
+Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+RepetitionsViewBase.hpp:42:18:virtual void RepetitionsViewBase::CancelChange()	0	static
+RepetitionsView.hpp:11:13:RepetitionsView::~RepetitionsView()	0	static
+RepetitionsView.cpp:16:6:virtual void RepetitionsView::tearDownScreen()	0	static
+RepetitionsView.cpp:8:6:virtual void RepetitionsView::setupScreen()	8	static
+RepetitionsView.cpp:21:6:virtual void RepetitionsView::RepetitionCountUp()	8	static
+RepetitionsView.cpp:28:6:virtual void RepetitionsView::RepetitionCountDown()	8	static
+RepetitionsView.cpp:35:6:virtual void RepetitionsView::ConfirmChange()	0	static
+RepetitionsView.hpp:11:13:virtual RepetitionsView::~RepetitionsView()	8	static
+RepetitionsView.cpp:3:1:RepetitionsView::RepetitionsView()	8	static

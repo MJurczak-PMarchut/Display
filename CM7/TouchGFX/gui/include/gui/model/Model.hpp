@@ -22,6 +22,8 @@ public:
 
     void GetToggleSettings(bool *BULB_State, bool *Focus_state);
     void SaveToggleSettings(bool BULB_State, bool Focus_state);
+    uint32_t GetRepetitionCount();
+    void SetRepetitionCount(uint32_t RepetitionCount);
 
     void tick();
 protected:
@@ -33,6 +35,7 @@ private:
     uint8_t sav_Hour_interval = 0;
     uint8_t sav_Minute_interval = 0;
     uint8_t sav_Second_interval = 0;
+    uint32_t sav_RepetitionCount = 0;
     bool sav_Focus_state = false;
     bool sav_BULB_state = false;
 };

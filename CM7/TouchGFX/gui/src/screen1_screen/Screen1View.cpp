@@ -23,6 +23,9 @@ void Screen1View::setupScreen()
     	remove(Czas);
     	remove(BulbTime_text);
     }
+    Unicode::snprintf(repetitions_tbBuffer, REPETITIONS_TB_SIZE, "%u", presenter->GetRepetitionCount());
+    repetitions_tb.resizeToCurrentText();
+    repetitions_tb.invalidate();
 }
 
 void Screen1View::tearDownScreen()

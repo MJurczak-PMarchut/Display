@@ -19,6 +19,8 @@
 #include <gui/settings_screen/SettingsPresenter.hpp>
 #include <gui/work_screen/WorkView.hpp>
 #include <gui/work_screen/WorkPresenter.hpp>
+#include <gui/repetitions_screen/RepetitionsView.hpp>
+#include <gui/repetitions_screen/RepetitionsPresenter.hpp>
 
 using namespace touchgfx;
 
@@ -111,4 +113,17 @@ void FrontendApplicationBase::gotoWorkScreenCoverTransitionEast()
 void FrontendApplicationBase::gotoWorkScreenCoverTransitionEastImpl()
 {
     touchgfx::makeTransition<WorkView, WorkPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+// Repetitions
+
+void FrontendApplicationBase::gotoRepetitionsScreenCoverTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplication::gotoRepetitionsScreenCoverTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoRepetitionsScreenCoverTransitionEastImpl()
+{
+    touchgfx::makeTransition<RepetitionsView, RepetitionsPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

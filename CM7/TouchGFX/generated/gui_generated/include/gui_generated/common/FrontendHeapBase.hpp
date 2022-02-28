@@ -24,6 +24,8 @@
 #include <gui/settings_screen/SettingsPresenter.hpp>
 #include <gui/work_screen/WorkView.hpp>
 #include <gui/work_screen/WorkPresenter.hpp>
+#include <gui/repetitions_screen/RepetitionsView.hpp>
+#include <gui/repetitions_screen/RepetitionsPresenter.hpp>
 
 
 /**
@@ -51,7 +53,8 @@ public:
             touchgfx::meta::TypeList< IntervalView,
             touchgfx::meta::TypeList< SettingsView,
             touchgfx::meta::TypeList< WorkView,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< RepetitionsView,
+            touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -68,7 +71,8 @@ public:
             touchgfx::meta::TypeList< IntervalPresenter,
             touchgfx::meta::TypeList< SettingsPresenter,
             touchgfx::meta::TypeList< WorkPresenter,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< RepetitionsPresenter,
+            touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
     /**

@@ -232,6 +232,18 @@
     <Filter Include="Header Files\generated\gui_generated\work_screen">
       <UniqueIdentifier>17FC8E9F-BB05-00D8-814B-0E8F8E29EED6</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\repetitions_screen">
+      <UniqueIdentifier>64617F30-C061-3F3A-635A-689008F019D7</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\repetitions_screen">
+      <UniqueIdentifier>EC4BB1F2-2DD8-E337-292F-8C4CDFD8F274</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\repetitions_screen">
+      <UniqueIdentifier>85BCD3D0-3D91-A1A6-4CFB-752006EC176C</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\repetitions_screen">
+      <UniqueIdentifier>80478BE2-1FBD-086A-FE2D-A609568832FC</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -308,6 +320,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\work_screen\WorkViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\work_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\repetitions_screen\RepetitionsPresenter.cpp">
+      <Filter>Source Files\gui\repetitions_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\repetitions_screen\RepetitionsView.cpp">
+      <Filter>Source Files\gui\repetitions_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\repetitions_screen\RepetitionsViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\repetitions_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -795,6 +816,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\work_screen\WorkViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\work_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\repetitions_screen\RepetitionsPresenter.hpp">
+      <Filter>Header Files\gui\repetitions_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\repetitions_screen\RepetitionsView.hpp">
+      <Filter>Header Files\gui\repetitions_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\repetitions_screen\RepetitionsViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\repetitions_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

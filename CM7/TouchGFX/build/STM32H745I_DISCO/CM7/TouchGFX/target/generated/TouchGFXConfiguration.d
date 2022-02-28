@@ -78,6 +78,9 @@ CM7/TouchGFX/build/STM32H745I_DISCO/CM7/TouchGFX/target/generated/TouchGFXConfig
  CM7/TouchGFX/gui/include/gui/work_screen/WorkView.hpp \
  CM7/TouchGFX/generated/gui_generated/include/gui_generated/work_screen/WorkViewBase.hpp \
  CM7/TouchGFX/gui/include/gui/work_screen/WorkPresenter.hpp \
+ CM7/TouchGFX/gui/include/gui/repetitions_screen/RepetitionsView.hpp \
+ CM7/TouchGFX/generated/gui_generated/include/gui_generated/repetitions_screen/RepetitionsViewBase.hpp \
+ CM7/TouchGFX/gui/include/gui/repetitions_screen/RepetitionsPresenter.hpp \
  CM7/TouchGFX/generated/images/include/BitmapDatabase.hpp \
  CM7/Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
@@ -278,6 +281,12 @@ CM7/TouchGFX/gui/include/gui/work_screen/WorkView.hpp:
 CM7/TouchGFX/generated/gui_generated/include/gui_generated/work_screen/WorkViewBase.hpp:
 
 CM7/TouchGFX/gui/include/gui/work_screen/WorkPresenter.hpp:
+
+CM7/TouchGFX/gui/include/gui/repetitions_screen/RepetitionsView.hpp:
+
+CM7/TouchGFX/generated/gui_generated/include/gui_generated/repetitions_screen/RepetitionsViewBase.hpp:
+
+CM7/TouchGFX/gui/include/gui/repetitions_screen/RepetitionsPresenter.hpp:
 
 CM7/TouchGFX/generated/images/include/BitmapDatabase.hpp:
 

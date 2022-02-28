@@ -50,3 +50,13 @@ void Model::GetToggleSettings(bool *BULB_State, bool *Focus_state)
 	*BULB_State = sav_BULB_state;
 	*Focus_state = sav_Focus_state;
 }
+
+uint32_t Model::GetRepetitionCount()
+{
+	return sav_RepetitionCount;
+}
+
+void Model::SetRepetitionCount(uint32_t RepetitionCount)
+{
+	sav_RepetitionCount = RepetitionCount;
+}

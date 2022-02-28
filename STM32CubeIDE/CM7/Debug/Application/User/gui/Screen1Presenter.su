@@ -6,8 +6,12 @@ Presenter.hpp:58:5:touchgfx::Presenter::Presenter()	16	static
 ModelListener.hpp:9:5:ModelListener::ModelListener()	16	static
 ModelListener.hpp:11:13:ModelListener::~ModelListener()	16	static
 ModelListener.hpp:11:13:virtual ModelListener::~ModelListener()	16	static
-Screen1Presenter.hpp:28:13:Screen1Presenter::~Screen1Presenter()	16	static
-Screen1Presenter.hpp:28:13:virtual Screen1Presenter::~Screen1Presenter()	16	static
+Screen1Presenter.hpp:32:13:Screen1Presenter::~Screen1Presenter()	16	static
+Screen1Presenter.hpp:32:13:virtual Screen1Presenter::~Screen1Presenter()	16	static
 Screen1Presenter.cpp:4:1:Screen1Presenter::Screen1Presenter(Screen1View&)	16	static
 Screen1Presenter.cpp:10:6:virtual void Screen1Presenter::activate()	16	static
 Screen1Presenter.cpp:15:6:virtual void Screen1Presenter::deactivate()	16	static
+Screen1Presenter.cpp:20:6:virtual void Screen1Presenter::GetTimeBulb(uint8_t*, uint8_t*, uint8_t*)	24	static
+Screen1Presenter.cpp:25:6:virtual void Screen1Presenter::GetTimeInterval(uint8_t*, uint8_t*, uint8_t*)	24	static
+Screen1Presenter.cpp:30:6:virtual bool Screen1Presenter::GetBULBInfo()	24	static
+Screen1Presenter.cpp:37:10:uint32_t Screen1Presenter::GetRepetitionCount()	16	static
